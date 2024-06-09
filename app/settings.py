@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-38xbh!-tgd0dv!qgsrhj&gx+*l1jo4re4@l34h2b**3x7g+uj#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -42,7 +42,13 @@ INSTALLED_APPS = [
     "api.apps.ApiConfig",
 ]
 
-CORS_ORIGN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
