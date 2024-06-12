@@ -4,3 +4,7 @@ django-cors-headers
 PyJWT
 mysqlclient
 django-cors-headers
+mvola
+python-dotenv
+djangorestframework-simplejwt
+
